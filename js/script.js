@@ -26,16 +26,20 @@ for(var i = 0; i < listaCognomi.length; i++) {
 
 
 //calcolo posizione corrente
-i = 0;
-var position, condition = false;
+var position = listaCognomi.indexOf(cognome) + 1;
 
-while (condition == false) {
-  if (cognome == listaCognomi[i]) {
-    condition = true;
-    position = ++i;
-  }
-  i++;
-}
+// alternativa più lunga e complessa
+// i = 0;
+// var position, condition = false;
+
+// while (condition == false) {
+//   if (cognome == listaCognomi[i]) {
+//     condition = true;
+//     position = ++i;
+//   }
+//   i++;
+// }
+
 
 //stampa posizione corrente
 alert("Il tuo cognome si trova nella posizione n." + position);
